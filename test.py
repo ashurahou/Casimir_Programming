@@ -22,15 +22,17 @@ def surarea(r):
 # print('Surface area of the cirlce with radius 5 is', surarea(5)) # This is not useful here
 
 def circplot(x0,y0,r):
-	"""
-	(x0,y0) is the center of the circle
-	r is the radius of the circle
-	"""
-	x = np.linspace(-1,1,100)
-	y = y0+ np.sqrt(r**2-(x-x0)**2)
-	plt.plot(x,y)
-	plt.savefig('circle.png',format='png')
-	return
+    """
+    (x0,y0) is the center of the circle
+    r is the radius of the circle
+    """
+    theta = np.linspace(0,2*np.pi,100)
+    x = r*np.cos(theta)
+    y = r*np.sin(theta)
+    fig = plt.plot(x,y)
+    #plt.show()
+    plt.savefig('circle.png')
+#    return
 
 	
 
