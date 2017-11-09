@@ -11,6 +11,10 @@ def circcir(r):
 	return np.pi*2*r
 
 # print('Circumference of circle with radius 5 is',circcir(5)) # This is not useful here
+
+print('Circumference of circle with radius 5 is',circcir(5))
+
+
 '''
 def surarea(r):
 	return np.pi*r**2
